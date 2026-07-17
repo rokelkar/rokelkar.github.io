@@ -9,7 +9,7 @@ layout: default
         <p>I love birds and planes, and spend hours trying to take pictures of them! Feel free to <a href="/photography">check those out.</a> Feedback—if you have any—is greatly appreciated, as I'm always trying to improve! My other hobbies include reading, hiking, badminton, and playing video games. Finally, here are some of my <a href="/favorites">favorites</a> if you'd like to learn more about me!</p>
         <div class="contact-section">
             <p>See more of me below.</p>
-            {% include social.html %}
+            {% include 'social.html' markdown=0 | safe %}
         </div>
     </div>
     <div class="cards-column">
