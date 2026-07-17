@@ -5,6 +5,7 @@ import mdFootnote from 'markdown-it-footnote';
 import backlinksPlugin from 'eleventy-plugin-backlinks';
 
 export default function(eleventyConfig) {
+
 	const markdownItOptions = {
 		html: true,
 		linkify: true,
@@ -39,13 +40,14 @@ export default function(eleventyConfig) {
 			preview: note.data.preview,
 		}),
 	});
-
-	eleventyConfig.addPassthroughCopy('src/assets');
+	
+	eleventyConfig.addPassthroughCopy("pages");
+	eleventyConfig.addPassthroughCopy('assets');
 	eleventyConfig.setUseGitIgnore(false);
 
 	return {
 		dir: {
-			input: 'src',
+			input: './',
 			output: '_site',
 			layouts: 'layouts',
 			includes: 'includes',

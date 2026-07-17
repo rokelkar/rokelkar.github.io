@@ -1,0 +1,14 @@
+{
+    "email": {
+        "url": "mailto:rokelkar@gmail.com",
+        "icon": "fa-regular fa-envelope"
+    }, 
+    "github": {
+        "url": "https://github.com/rokelkar",
+        "icon": "fa-brands fa-github"
+    },
+    "linkedin": {
+        "url": "https://www.linkedin.com/in/rokelkar/",
+        "icon": "fa-brands fa-linkedin"
+    }
+}
